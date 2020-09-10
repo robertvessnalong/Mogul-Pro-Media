@@ -1,0 +1,871 @@
+/* 
+General Styling
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  overflow-x: hidden;
+}
+
+img {
+  width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+/* 
+Header 
+*/
+
+header {
+  background: url(images/intro-bg.png) no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* 
+Company Name
+*/
+
+.company-name h1 span {
+  font-weight: 100;
+}
+
+/* 
+Navigation Bar
+*/
+
+.main-nav {
+  color: white;
+  min-height: 8vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+  text-transform: uppercase;
+  padding: 0 1.5em;
+}
+
+.nav-links {
+  position: absolute;
+  right: 0;
+  top: 80%;
+  height: 100vh;
+  width: 50%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  transform: translateX(100%);
+  transition: transform 0.5s ease-in;
+  opacity: 0.9;
+  z-index: 1000;
+}
+
+.nav-links li a {
+  color: black;
+}
+
+/* 
+Mobile Menu
+*/
+
+.mobile-menu div {
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  margin: 5px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.mobile-menu {
+  margin-left: auto;
+}
+
+.active {
+  transform: translateX(0%);
+}
+
+.rotate .line-one {
+  transform: rotate(-50deg) translate(-5px, 6px);
+}
+
+.rotate .line-two {
+  opacity: 0;
+}
+
+.rotate .line-three {
+  transform: rotate(50deg) translate(-5px, -6px);
+}
+
+/* 
+Header Message
+*/
+
+.hero-text {
+  text-align: center;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-transform: uppercase;
+}
+
+.hero-text h2 {
+  font-weight: 400;
+  font-size: 0.8em;
+}
+
+.hero-text h3 {
+  font-size: 2.5em;
+}
+
+.hero-text h3:nth-child(2) {
+  font-weight: 100;
+  font-size: 2em;
+  margin: 0.1em 0;
+  margin-top: 0.5em;
+}
+
+/* 
+Hero Button
+*/
+
+.hero-text button {
+  text-transform: uppercase;
+  background: none;
+  border: 2px solid white;
+  color: white;
+  padding: 1em 3em;
+  margin-top: 2.5em;
+}
+
+/* 
+Featured Items
+*/
+
+.featured-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.featured-header h2 {
+  font-weight: 100;
+  color: grey;
+  font-size: 0.8em;
+  margin-bottom: 1em;
+}
+
+.featured-header h3 {
+  font-size: 1.5em;
+}
+
+.featured-header h3 span {
+  font-weight: 100;
+}
+
+/* 
+Home Container
+*/
+
+.home-container {
+  text-transform: uppercase;
+  box-shadow: 0px 0px 10px 1px grey;
+  width: 80%;
+  margin: 2em auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 80%;
+}
+
+.home-container .home-image img {
+  width: 100%;
+}
+
+.home-container a {
+  text-decoration: underline;
+  color: black;
+  margin-bottom: 2.5em;
+}
+
+/* 
+Home Stats
+*/
+
+.home-stats {
+  padding-top: 1em;
+  padding-bottom: 2em;
+  text-align: center;
+  text-transform: none;
+}
+
+.home-stats h4 {
+  color: grey;
+  margin-bottom: 0.5em;
+}
+
+.price {
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
+/* 
+Home Features
+*/
+
+.home-features {
+  margin-top: 1em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.home-features img {
+  width: 25px;
+}
+
+/* 
+Divide
+*/
+
+.divide {
+  width: 75px;
+  background-color: black;
+  height: 5px;
+  margin: 2em auto;
+}
+
+/* 
+Realtor #023061
+*/
+
+.realtor {
+  background-color: #023061;
+  margin-top: 5em;
+}
+
+.realtor button {
+  background: none;
+  border: 2px solid white;
+  color: white;
+  padding: 0.7em 3em;
+  text-transform: uppercase;
+  margin: 2em 0em;
+}
+
+/* 
+Realtor Header
+*/
+
+.realtor-header {
+  text-transform: uppercase;
+}
+
+.realtor-header h2 {
+  font-size: 2em;
+  margin-bottom: 0.3em;
+}
+
+.realtor-header h2 span {
+  font-weight: 100;
+}
+
+.realtor-header h3 {
+  font-size: 0.8em;
+}
+
+/* 
+Realtor Image
+*/
+
+.profile-image {
+  position: relative;
+  height: 450px;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-image img {
+  position: absolute;
+  bottom: 30px;
+  max-height: 500px;
+  max-width: 300px;
+  min-width: 300px;
+  min-height: 450px;
+}
+
+/* 
+Realtor Desc
+*/
+
+.realtor-info {
+  width: 80%;
+  margin: auto;
+  color: white;
+}
+
+.divide-realtor {
+  width: 75px;
+  height: 5px;
+  background-color: white;
+  margin: 1.5em 0em;
+}
+
+.realtor-desc {
+  font-size: 0.8em;
+}
+
+/* 
+Testimony
+*/
+
+.testimony {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 3em auto;
+}
+
+/* 
+Testimony Header
+*/
+
+.testimony-header {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.testimony-header h2 {
+  color: gray;
+  font-size: 1em;
+  margin-bottom: 0.7em;
+}
+
+.testimony-header h3 {
+  font-size: 1.5em;
+}
+
+/* 
+Testimony Image
+*/
+
+.left-testimony-message img,
+.right-testimony-message img {
+  height: 30px;
+  width: 75px;
+  margin-bottom: 0.5em;
+}
+
+/* 
+Testimony Message
+*/
+
+.left-testimony-message,
+.right-testimony-message {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  text-align: center;
+  margin: 2em auto;
+}
+
+/* 
+Arrows
+*/
+
+.left-arrow p,
+.right-arrow p {
+  font-size: 2em;
+  display: none;
+  cursor: pointer;
+}
+
+/* 
+Testimony Name
+*/
+
+.testimony-name {
+  margin: 1em;
+  font-size: 0.9em;
+}
+
+/* 
+Purchase and Sell
+*/
+
+.purchase-container,
+.sell-container {
+  background-color: #e5eaef;
+  padding: 2.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.purchase-container .divide,
+.sell-container .divide {
+  margin: 1em 0;
+  width: 50px;
+}
+
+.purchase-image img,
+.sell-image img {
+  display: block;
+  height: 100%;
+}
+
+.purchase-image {
+  grid-area: purchaseImage;
+}
+
+.sell-image {
+  grid-area: sellImage;
+}
+
+.purchase-container {
+  grid-area: purchase;
+}
+
+.sell-container {
+  grid-area: sell;
+}
+
+.purchase-header,
+.sell-header {
+  text-transform: uppercase;
+}
+
+.purchase-header h2,
+.sell-header h2 {
+  font-size: 1.5em;
+  margin-bottom: 0.2em;
+}
+
+.purchase-header h3,
+.sell-header h3 {
+  font-size: 1.4em;
+  font-weight: 100;
+}
+
+.purchase-container button,
+.sell-container button {
+  margin: 2em 0;
+  padding: 0.8em 3.5em;
+  background: none;
+  border: 1px solid black;
+  text-transform: uppercase;
+}
+
+.purchase-desc p,
+.sell-desc p {
+  font-size: 0.8em;
+}
+
+/* 
+Media Query for 768px
+*/
+
+@media screen and (min-width: 760px) {
+  /* 
+    Mobile Menu
+    */
+  .mobile-menu {
+    display: none;
+  }
+
+  /* 
+  Comapny Name
+  */
+
+  .company-name {
+    margin-left: 2em;
+  }
+
+  /* 
+  Navigation
+  */
+
+  .nav-links {
+    position: static;
+    transform: translateX(0);
+    height: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 60%;
+    margin-left: auto;
+  }
+
+  .nav-links li a {
+    color: white;
+  }
+
+  /* 
+  Hero Text
+  */
+
+  .hero-text h2 {
+    font-size: 1em;
+  }
+
+  .hero-text h3 {
+    font-size: 3.5em;
+  }
+
+  .hero-text h3:nth-child(2) {
+    font-size: 3em;
+  }
+
+  /* 
+  Featured Header
+  */
+
+  .featured-header h2 {
+    font-size: 1em;
+  }
+
+  .featured-header h3 {
+    font-size: 2em;
+  }
+
+  /* 
+  Home Container
+  */
+
+  .home-container {
+    width: 50%;
+    max-width: 50%;
+  }
+
+  .home-stats {
+    font-size: 1.2em;
+  }
+
+  /* 
+  Realtor Image
+  */
+
+  .profile-image img {
+    margin-left: 20px;
+    bottom: 0px;
+    min-height: 480px;
+  }
+
+  /* 
+  Realtor
+  */
+
+  .realtor {
+    display: flex;
+  }
+
+  /* 
+  Realtor Desc
+  */
+
+  .realtor-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 80%;
+    margin-top: 3.5em;
+  }
+
+  .realtor-desc {
+    width: 80%;
+  }
+
+  /* 
+  Messages
+  */
+
+  .messages {
+    display: flex;
+  }
+
+  /* 
+  Arrows
+  */
+
+  .left-arrow p,
+  .right-arrow p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+
+  .left-arrow p {
+    margin-left: 2em;
+  }
+
+  .right-arrow p {
+    margin-right: 2em;
+  }
+
+  /* 
+  Testimony Message
+  */
+
+  .left-testimony-message,
+  .right-testimony-message {
+    width: 30%;
+  }
+
+  /* 
+  Purchase List
+  */
+
+  .purchase-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 350px 350px;
+    grid-template-areas:
+      "purchaseImage purchase"
+      "sell sellImage";
+  }
+
+  .purchase-container,
+  .sell-container {
+    padding: 1.5em;
+    justify-content: center;
+    padding-left: 10%;
+  }
+
+  .purchase-desc,
+  .sell-desc {
+    width: 80%;
+  }
+}
+
+/* 
+Media Query for 1024px
+*/
+
+@media screen and (min-width: 1024px) {
+  /* 
+    Header
+  */
+
+  header {
+    width: 100vw;
+    height: 1200px;
+  }
+
+  /* 
+    Company Name
+  */
+
+  .company-name {
+    margin-left: 6em;
+  }
+
+  /* 
+    Navigation
+  */
+
+  .nav-links {
+    margin-left: auto;
+    width: 40%;
+  }
+
+  /* 
+    Hero Message
+  */
+
+  .hero-text {
+    height: 90vh;
+  }
+
+  .hero-text h2 {
+    font-size: 1.5em;
+  }
+
+  .hero-text h3 {
+    font-size: 4em;
+  }
+
+  .hero-text h3:nth-child(2) {
+    font-weight: 100;
+    font-size: 3.5em;
+    margin: 0.1em 0;
+    margin-top: 0.5em;
+  }
+
+  /* 
+    Hero Button
+  */
+
+  .hero-text button {
+    font-size: 1.5em;
+  }
+
+  /* 
+    Featured Home
+  */
+
+  .featured-header {
+    font-size: 1.5em;
+  }
+
+  .featured-homes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* 
+  Home Container
+  */
+
+  .home-container {
+    width: 25%;
+    margin: 1em;
+    min-width: 25%;
+  }
+
+  /* 
+  Home Stats
+  */
+
+  .home-stats {
+    font-size: 1.1em;
+  }
+
+  /* 
+  Realtor Container
+  */
+
+  .realtor {
+    height: 650px;
+  }
+
+  /* 
+  Realtor Image
+  */
+
+  .profile-image img {
+    min-height: 700px;
+    min-width: 450px;
+    margin-right: 3em;
+  }
+
+  .profile-image {
+    justify-content: center;
+    margin-bottom: 0px;
+  }
+
+  /* 
+  Realtor Header
+  */
+
+  .realtor-header h2 {
+    font-size: 2.5em;
+  }
+
+  .realtor-header h3 {
+    font-size: 1.1em;
+  }
+
+  /* 
+  Realtor Info
+  */
+
+  .realtor-info {
+    margin: 0;
+    justify-content: center;
+    width: 80%;
+  }
+
+  .realtor-desc p {
+    font-size: 1.5em;
+  }
+
+  /* 
+  Testimony Header
+  */
+
+  .testimony-header h2 {
+    font-size: 1.2em;
+  }
+
+  .testimony-header h3 {
+    font-size: 2em;
+  }
+
+  /* 
+  Testimony Container
+  */
+
+  .left-testimony-message,
+  .right-testimony-message {
+    width: 30%;
+    font-size: 1.4em;
+  }
+
+  /* 
+  Arrows
+  */
+
+  .left-arrow {
+    margin-left: 3em;
+  }
+
+  .right-arrow {
+    margin-right: 3em;
+  }
+
+  .purchase-container,
+  .sell-container {
+    justify-content: center;
+  }
+
+  .purchase-list {
+    grid-template-rows: auto;
+  }
+
+  .purchase-container,
+  .sell-container {
+    font-size: 1.5em;
+  }
+
+  .sell-container button,
+  .purchase-container button {
+    font-size: 0.8em;
+  }
+}
