@@ -637,15 +637,27 @@ Form Style
   padding: 10px;
 }
 
+/* 
+Form TextArea
+*/
+
 .form textarea {
   height: 200px;
 }
+
+/* 
+Form Placeholder
+*/
 
 .form input::placeholder,
 .form textarea::placeholder {
   text-transform: uppercase;
   font-size: 0.8em;
 }
+
+/* 
+Form Button
+*/
 
 .form button {
   padding: 0.5em 3em;
@@ -654,6 +666,68 @@ Form Style
   text-transform: uppercase;
   background-color: #023061;
   font-weight: 100;
+  margin-bottom: 5em;
+}
+
+/* 
+Gallery of Homes
+*/
+
+.gallery {
+  height: 100px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.gallery img {
+  width: 19.5%;
+  height: 100%;
+}
+
+/* 
+Footer
+*/
+
+.footer-container {
+  background: #023061;
+  color: white;
+  padding-top: 3em;
+}
+
+.footer-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-title {
+  text-align: center;
+}
+
+.footer-title h3 {
+  text-transform: uppercase;
+  margin-bottom: 0.5em;
+}
+
+.footer-title h3 span {
+  font-weight: 100;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.social-links img {
+  width: 20px;
+  height: 20px;
+  margin: 0.5em;
+}
+
+.section-links li {
+  padding: 0.8em;
 }
 
 /* 
@@ -875,6 +949,18 @@ Media Query for 768px
   #option {
     float: right;
   }
+
+  /* 
+  Gallery
+  */
+
+  .gallery {
+    height: 150px;
+  }
+
+  .gallery img {
+    width: 20%;
+  }
 }
 
 /* 
@@ -1071,5 +1157,13 @@ Media Query for 1024px
   .sell-container button,
   .purchase-container button {
     font-size: 0.8em;
+  }
+
+  /* 
+  Gallery
+  */
+
+  .gallery {
+    height: 200px;
   }
 }
