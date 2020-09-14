@@ -248,13 +248,49 @@
     </section>
     <!-- Ending of Contact -->
     <section class="contact-form">
-      <div class="form">
+      <div class="form-container">
         <div class="form-header">
           <h2>Schedule a Free</h2>
           <h3>Home Consultation</h3>
         </div>
+        <form action="" method="POST" class="form">
+          <fieldset>
+            <div class="general-info">
+              <input
+                type="text"
+                id="name"
+                name="user-name"
+                placeholder="name"
+              />
+              <input
+                type="email"
+                name="user-email"
+                placeholder="email"
+              />
+              <input
+                type="tel"
+                id="telephone"
+                name="user-phone"
+                placeholder="phone"
+              />
+              <input
+                type="text"
+                id="option"
+                name="user-option"
+                placeholder="option"
+              />
+            </div>
+            <textarea
+              id="user-message"
+              name="user-message"
+              placeholder="Message"
+            ></textarea>
+          </fieldset>
+          <button type="submit">Submit</button>
+        </form>
       </div>
     </section>
+    <!-- End of Form -->
     <script src="app.js"></script>
   </body>
 </html>
