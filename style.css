@@ -692,7 +692,12 @@ Footer
   background: #023061;
   color: white;
   padding-top: 3em;
+  padding-bottom: 3em;
 }
+
+/* 
+Footer Top
+*/
 
 .footer-top {
   display: flex;
@@ -701,6 +706,10 @@ Footer
   align-items: center;
 }
 
+/* 
+Footer Title
+*/
+
 .footer-title {
   text-align: center;
 }
@@ -708,11 +717,16 @@ Footer
 .footer-title h3 {
   text-transform: uppercase;
   margin-bottom: 0.5em;
+  font-size: 2em;
 }
 
 .footer-title h3 span {
   font-weight: 100;
 }
+
+/* 
+Social Links
+*/
 
 .social-links {
   display: flex;
@@ -726,10 +740,18 @@ Footer
   margin: 0.5em;
 }
 
+/* 
+Section Links
+*/
+
 .section-links li {
   padding: 0.8em;
   text-align: center;
 }
+
+/* 
+Office Location
+*/
 
 .office-location {
   display: flex;
@@ -742,6 +764,10 @@ Footer
 .office-location img {
   width: 50%;
 }
+
+/* 
+Office Address
+*/
 
 .office-address {
   margin-right: 1em;
@@ -766,6 +792,10 @@ Footer
   text-decoration-color: white;
   margin-bottom: 0.5em;
 }
+
+/* 
+Footer Bottom and Divide
+*/
 
 .footer-divide {
   width: 80%;
@@ -1013,6 +1043,52 @@ Media Query for 768px
   .gallery img {
     width: 20%;
   }
+
+  /* 
+  Footer Top
+  */
+
+  .footer-top {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .office-location {
+    flex-direction: row;
+    width: 30%;
+  }
+
+  .office-location img {
+    width: 50%;
+  }
+
+  .office-address {
+    width: 100%;
+  }
+
+  .office-address h5 {
+    text-align: end;
+  }
+
+  .office-address p,
+  .office-address a {
+    align-self: flex-end;
+    font-size: 0.8em;
+    text-align: end;
+  }
+
+  /* 
+  Social Links
+  */
+
+  .social-links {
+    justify-content: flex-start;
+  }
+
+  .section-links li {
+    text-align: start;
+  }
 }
 
 /* 
@@ -1217,5 +1293,22 @@ Media Query for 1024px
 
   .gallery {
     height: 200px;
+  }
+
+  /* 
+  Office Address
+  */
+
+  .office-location img {
+    min-width: 50%;
+  }
+
+  .office-address h5 {
+    font-size: 1.5em;
+  }
+
+  .office-address p,
+  .office-address a {
+    font-size: 1.3em;
   }
 }
